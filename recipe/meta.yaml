@@ -1,4 +1,4 @@
-{% set version = '0.14' %}
+{% set version = '0.16' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/estimatr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/estimatr/estimatr_{{ version }}.tar.gz
-  sha256: 2c841a0aa5bb24691566cd029f137ac9178c28dc9a8fe68b560818978fee90fa
+  sha256: 289d4fd70e25f64341df61b97d4b617fcc04050c73f75acaf3b3c9e86afea27d
 
 build:
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -68,9 +68,9 @@ extra:
 # Package: estimatr
 # Type: Package
 # Title: Fast Estimators for Design-Based Inference
-# Version: 0.14
-# Date: 2018-10-29
-# Authors@R: c(person("Graeme", "Blair", email = "graeme.blair@ucla.edu", role = c("aut", "cre")), person("Jasper", "Cooper", email = "jjc2247@columbia.edu", role = c("aut")), person("Alexander", "Coppock", email = "alex.coppock@yale.edu", role = c("aut")), person("Macartan", "Humphreys", email = "macartan@gmail.com", role = c("aut")), person("Luke", "Sonnet", email = "luke.sonnet@gmail.com", role = c("aut")), person("Neal", "Fultz", email = "nfultz@gmail.com", role = c("ctb")))
+# Version: 0.16
+# Date: 2019-02-27
+# Authors@R: c(person("Graeme", "Blair", email = "graeme.blair@ucla.edu", role = c("aut", "cre")), person("Jasper", "Cooper", email = "jjc2247@columbia.edu", role = c("aut")), person("Alexander", "Coppock", email = "alex.coppock@yale.edu", role = c("aut")), person("Macartan", "Humphreys", email = "macartan@gmail.com", role = c("aut")), person("Luke", "Sonnet", email = "luke.sonnet@gmail.com", role = c("aut")), person("Neal", "Fultz", email = "nfultz@gmail.com", role = c("ctb")), person("Lily", "Medina", email = "lilymiru@gmail.com", role = c("ctb")))
 # Description: Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of experimental estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013) <doi:10.1214/12-AOAS583>.
 # URL: https://declaredesign.org/r/estimatr/, https://github.com/DeclareDesign/estimatr
 # BugReports: https://github.com/DeclareDesign/estimatr/issues
@@ -78,13 +78,13 @@ extra:
 # Depends: R (>= 3.4.0)
 # Imports: Formula, generics, methods, Rcpp (>= 0.12.16), rlang (>= 0.2.0)
 # LinkingTo: Rcpp, RcppEigen
-# RoxygenNote: 6.1.0
+# RoxygenNote: 6.1.1
 # LazyData: true
-# Suggests: fabricatr (>= 0.4), randomizr (>= 0.16), AER, car, clubSandwich, ivpack, lfe, margins, prediction, RcppEigen, sandwich, stargazer, testthat
+# Suggests: fabricatr (>= 0.4), randomizr (>= 0.16), AER, clubSandwich, ivpack, lfe, margins, prediction, RcppEigen, sandwich, stargazer, testthat, car
 # Enhances: texreg
 # NeedsCompilation: yes
-# Packaged: 2018-11-05 18:35:07 UTC; luke
-# Author: Graeme Blair [aut, cre], Jasper Cooper [aut], Alexander Coppock [aut], Macartan Humphreys [aut], Luke Sonnet [aut], Neal Fultz [ctb]
+# Packaged: 2019-03-01 23:39:01 UTC; luke
+# Author: Graeme Blair [aut, cre], Jasper Cooper [aut], Alexander Coppock [aut], Macartan Humphreys [aut], Luke Sonnet [aut], Neal Fultz [ctb], Lily Medina [ctb]
 # Maintainer: Graeme Blair <graeme.blair@ucla.edu>
 # Repository: CRAN
-# Date/Publication: 2018-11-06 12:30:03 UTC
+# Date/Publication: 2019-03-02 08:10:08 UTC
