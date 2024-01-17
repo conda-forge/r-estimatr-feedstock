@@ -3,6 +3,7 @@ About r-estimatr-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-estimatr-feedstock/blob/main/LICENSE.txt)
 
+
 About r-estimatr
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://declaredesign.org/r/estimatr/, https://github.com/DeclareDesign/es
 Package license: MIT
 
 Summary: Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of experimental estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013) <doi:10.1214/12-AOAS583>.
+
 About r-estimatr
 ----------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
