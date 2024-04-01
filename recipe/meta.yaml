@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/estimatr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/estimatr/estimatr_{{ version }}.tar.gz
-  sha256: c644e6ba06e1a6e0251e01f9703af1db6d64d2af7eb563626887b0c9d2ed01d7
+  sha256: 6cdfd1d59f7ebe572d0c079d0dbb6e6650973027964ed1c0591411782efe2eed
 
 build:
   merge_build_host: true  # [win]
