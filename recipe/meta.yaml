@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/estimatr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/estimatr/estimatr_{{ version }}.tar.gz
-  sha256: 4d43e10e56fe4b46304be0660e379369efb642e6fed5c024005250ed77d6c6f9
+  sha256: 730523f2e6c5b1a653dfaf9cddf0c9cedbecf6315c2db147ea734d877179d3f8
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,8 +53,8 @@ test:
 about:
   home: https://declaredesign.org/r/estimatr/, https://github.com/DeclareDesign/estimatr
   license: MIT
-  summary: Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of experimental
-    estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013) <doi:10.1214/12-AOAS583>.
+  summary: Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of 
+    experimental estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013) <doi:10.1214/12-AOAS583>.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
