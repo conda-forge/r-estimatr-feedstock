@@ -12,7 +12,7 @@ source:
   sha256: 730523f2e6c5b1a653dfaf9cddf0c9cedbecf6315c2db147ea734d877179d3f8
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,6 +37,7 @@ requirements:
     - r-rcppeigen
     - r-generics
     - r-rlang >=0.2.0
+    - r-tibble
   run:
     - r-base
     - r-formula
@@ -44,6 +45,7 @@ requirements:
     - r-rcppeigen
     - r-generics
     - r-rlang >=0.2.0
+    - r-tibble
 
 test:
   commands:
